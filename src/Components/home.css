@@ -1,0 +1,179 @@
+.home{
+    background-color: black;
+    background-image: url('../Assets/rays.svg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.homeuppar{
+    color: white;
+    top: 0;
+    width: 100vw;
+    height: 0vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cubeimg{
+    height: 15vh;
+    width: 15vw;
+    position: relative;
+    left: 13vw;
+}
+.stairsimg{
+    height: 40vh;
+    width: 40vw;
+}
+
+.homeniche{
+    color: white;
+    position: relative;
+    top: 50vh;
+    width: 100vw;
+    height: 0vh;
+    background-color: red;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cubesimg{
+    height: 30vh;
+    width: 30vw;
+    position: relative;
+    left: 12vh;
+    z-index: 0;
+}
+.pillarsimg{
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    right: 15vh;
+    z-index: 0;
+}
+.homebichka{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+.homebichka span,
+.homebichka img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 10px;
+} 
+.cash {
+    top: 0;
+    font-size: 35vh;
+    font-weight: 700;
+}
+.phone-image{
+    top: 6vh;
+}
+.phoneimg{
+    width: 100vw;
+    height: 75vh;
+}
+.app {
+    top: 30vh;
+    font-size: 35vh;
+    font-weight: 700;
+} 
+
+.homefooter{
+    position: relative;
+    top: 77vh;
+}
+.homepara{
+    color: white;
+}
+.homesicon img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    width: 5vh;
+    height: 5vh;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+   .pillarsimg{
+    transition: right 1s ease-in-out;
+    right: 5vh;
+   }
+}
+@media (max-width:850px){
+    .cash{
+        top: 5vh;
+        font-size:30vh;
+    }
+    .app{
+        font-size:30vh;
+    }
+    .phoneimg{
+        width: 70vw;
+        height: 65vh;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 350px) {
+    .cash{
+        font-size: 25vh;
+        top: 10vh;
+    }
+    .app{
+        font-size: 25vh;
+    }
+
+    .pillarsimg{
+        transition: bottom 1s ease-in-out;
+        left: 0vh;
+        bottom: 10vh;
+    }
+    .cubesimg{
+        left: 5vh;
+    }
+}
+
+@media (max-width:450px){
+    .cash{
+        font-size: 15vh;
+        top: 18vh;
+    }
+    .app{
+        font-size: 15vh;
+    }
+    .phoneimg{
+        top: -5vh;
+    }
+    .stairsimg{
+        position: relative;
+        bottom: 5vh;
+    }
+}
+
+@media (max-width: 450px){
+    .homeuppar ,.homeniche{
+        display: none;
+    }
+    .phoneimg{
+        width: 50vw ;
+        height: 40vh;
+        top: -10vh;
+    }
+    .cash{
+        top: 35vh;
+    }
+    .app{
+        top: 50vh;
+    }
+}
