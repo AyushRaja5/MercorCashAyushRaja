@@ -7,16 +7,18 @@ import cube from '../Assets/homeCube.svg'
 import cubes from '../Assets/homeCubes.svg'
 import pillars from '../Assets/homePillar.svg'
 import stairs from '../Assets/homeStairs.svg'
-
+import Menu from './Menu';
 const Home = () => {
-  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+  const [isMenuVisible, setMenuVisible] = useState(false);
 
-  const toggleHamburgerMenu = () => {
-    setShowHamburgerMenu(!showHamburgerMenu);
+  // Function to toggle the visibility of the Menu component
+  const toggleMenu = () => {
+    setMenuVisible(!isMenuVisible);
   };
   return (
     <div className='home'>
-       <Header toggleHamburgerMenu={toggleHamburgerMenu}  style={{zIndex:9999}}/>
+       <Header toggleMenu={toggleMenu}/>
+       {isMenuVisible && <Menu />}
       <div className='homecontent'>
         <div className='homeuppar'>
           <img src={cube}  className='cubeimg'/>

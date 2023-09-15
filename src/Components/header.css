@@ -38,16 +38,6 @@
     cursor: pointer;
 }
 
-.hamburger-items {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .hamburger-items.show {
-    display: none;
-  }
-
 @media (max-width:1024px) {
     .menu{
         width: 70vw;
@@ -58,53 +48,6 @@
     .menu{
         display: none;
     }
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
-      }
-      .hamburger div {
-        width: 30px;
-        height: 4px;
-        background-color: white;
-        border-radius: 2px;
-      }
-    .hamburger.show div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 5px);
-      }    
-      .hamburger.show div:nth-child(2) {
-        opacity: 0;
-      }
-      .hamburger.show div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -5px);
-      }
-      .hamburger-items {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #333; 
-        padding: 20px; 
-        position: absolute;
-        top: 60px;
-        left: 10px;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        z-index: 99999;
-      }
-      .hamburger-items.show {
-        display: flex;
-      }
-      
-      .hamburger-items span {
-        color: white;
-        font-size: 16px;
-        text-transform: uppercase;
-        cursor: pointer;
-        &:hover{
-          text-decoration: underline;
-        }
-      } 
     .eye img {
         display: block;
     }
